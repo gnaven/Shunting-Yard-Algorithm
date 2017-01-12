@@ -1,1 +1,7 @@
-# Shunting-Yard-Algorithm
+
+
+Shunting_Yard is the main class.
+The Postfix method reads the file and stores each line in array lists. The postfix method then evaluates what to enqueue and the sequence in which to enqueue, and when to stack what. This method calls a method that finds the precendence of the the operators. However, for only parenthisis it doesn't call the mehtod and adn if else statements are used for that.  The operators are in the parenthesis are put in the stack. If there is more then one operator in the parenthesis then it is taken care of by the precendence method. After the postfix is done for a line it stores it in an arraylist. After the postfix is done, the main method calls the PostFix_Evaluation method where it takes in the postfix in Queues. It then stacks all the numbers, until an operator is found, and then does the evaluation where the first and second numbers in the stack is evaluated with the current or the top operator in the queue. To actually to the calculations a method is called which evaluates it, and also the logical ones. 
+the code can also evaluate for the modulo % and exponentiation ^. Examples of each is also provided along with the other given funcitions to be evaluated. 
+At the end each evaluation is written in a txt file.
+The main mehtod only calls the Shunting method with the input adn output txt files. Hence if you want to use any other file to test or print in any other file, it can be done by just changing the txt files name in the Shunting (input file, output file ). 
